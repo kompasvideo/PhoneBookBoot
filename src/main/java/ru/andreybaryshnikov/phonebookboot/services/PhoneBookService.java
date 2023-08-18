@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface PhoneBookService {
     PhoneBook getPhoneBook(int id);
-    List<PhoneBook> getPhoneBooks();
+    Iterable<PhoneBook> getPhoneBooks();
     void editRecordToPhoneBooks(PhoneBook newPhoneBook);
     void deleteRecordToPhoneBooks(int id);
     PhoneBook getNewPhoneBook();

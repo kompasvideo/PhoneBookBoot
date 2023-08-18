@@ -1,35 +1,35 @@
 package ru.andreybaryshnikov.phonebookboot.models;
 
-//import jakarta.persistence.*;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Getter
 @Setter
 @ToString
-//@Entity
-//@Table(name = "phonebook")
+@Entity
+@Table(name = "phonebook")
 public class PhoneBook {
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "phonebook_id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "phonebook_id")
     private int phoneBookID;
     // Фамилия
-//    @Column(name = "last_name")
+    @Column(name = "last_name")
     private String lastName;
     // Имя
-//    @Column(name = "first_name")
+    @Column(name = "first_name")
     private String firstName;
     // Отчество
-//    @Column(name = "three_name")
+    @Column(name = "three_name")
     private String threeName;
     // Номер телефона
-//    @Column(name = "number_phone")
+    @Column(name = "number_phone")
     private String numberPhone;
     //Адрес
-//    @Column(name = "address")
+    @Column(name = "address")
     private String address;
     // Описание
-//    @Column(name = "description")
+    @Column(name = "description")
     private String description;
 
     public PhoneBook() {

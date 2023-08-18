@@ -18,7 +18,7 @@ public class PhoneBookController {
 
     @GetMapping(value = "/")
     public String showFirstView(Model model) {
-        List<PhoneBook> phoneBooks =  phoneBookService.getPhoneBooks();
+        Iterable<PhoneBook> phoneBooks =  phoneBookService.getPhoneBooks();
         model.addAttribute("phoneBooks",phoneBooks);
         model.addAttribute("header", "Notebook");
         model.addAttribute("addRecord","Add record");
