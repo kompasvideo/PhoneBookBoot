@@ -41,4 +41,12 @@ public class PhoneBook {
         address = "";
         description = "";
     }
+    public PhoneBook(String lastName, String firstName, String threeName, String numberPhone, String address, String description) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.threeName = threeName;
+        this.numberPhone = numberPhone;
+        this.address = address;
+        this.description = description;
+    }
 }
