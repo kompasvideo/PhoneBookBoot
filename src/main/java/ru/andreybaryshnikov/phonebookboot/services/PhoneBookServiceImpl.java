@@ -1,17 +1,11 @@
 package ru.andreybaryshnikov.phonebookboot.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import ru.andreybaryshnikov.phonebookboot.repository.PhonebookRepository;
 import ru.andreybaryshnikov.phonebookboot.models.PhoneBook;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Service
 public class PhoneBookServiceImpl implements PhoneBookService{
-    private List<PhoneBook> phoneBooks;
-    private int newId = 1;
     private PhonebookRepository phoneBookRepository;
 
     public PhoneBookServiceImpl(PhonebookRepository phoneBookRepository) {
@@ -20,7 +14,7 @@ public class PhoneBookServiceImpl implements PhoneBookService{
 
     @Override
     public PhoneBook getPhoneBook(int id) {
-          return phoneBookRepository.findById(id).get(); //getPhoneBook(id);
+          return phoneBookRepository.findById(id).get();
     }
     @Override
     public Iterable<PhoneBook> getPhoneBooks() {
