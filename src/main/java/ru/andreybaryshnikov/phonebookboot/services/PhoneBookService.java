@@ -2,7 +2,6 @@ package ru.andreybaryshnikov.phonebookboot.services;
 
 
 import ru.andreybaryshnikov.phonebookboot.models.PhoneBook;
-import java.util.List;
 
 public interface PhoneBookService {
     PhoneBook getPhoneBook(int id);
